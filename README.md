@@ -22,7 +22,7 @@ sudo chmod -R 777 bootstrap/cache
 composer install && composer dump-autoload
 ```
 
-4. Execute o comando abaixo para configurar algumas regras da aplicação
+4. Execute o comando abaixo para copiar configurações da aplicação
 
 ``` bash
 cp .env.example .env
