@@ -1,9 +1,17 @@
 @extends('layout.layout')
 
 @section('content')
-<h1>Gestão de Clientes</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<div class="row pb-4">
+  <div class="col-lg-12 margin-tb">
+    <div class="pull-left">
+      <h2>Gestão de Clientes</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="pull-right">
+      <a class="btn btn-success" href="{{ route('clientes.create') }}"> Cadastrar Novo Cliente</a>
+    </div>
+  </div>
+</div>
 
   <div class="form-group">
     <strong>#:</strong>
@@ -23,6 +31,26 @@ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   <div class="form-group">
     <strong>CEP:</strong>
     {{ $clientes->cep }}
+  </div>
+
+  <div class="form-group">
+    <strong>Rua:</strong>
+    {{ $clientes->rua }}
+  </div>
+
+  <div class="form-group">
+    <strong>Bairro:</strong>
+    {{ $clientes->bairro }}
+  </div>
+
+  <div class="form-group">
+    <strong>Cidade:</strong>
+    {{ $clientes->cidade }}
+  </div>
+
+  <div class="form-group">
+    <strong>UF:</strong>
+    {{ $clientes->uf }}
   </div>
 
   <div class="form-group">

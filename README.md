@@ -3,7 +3,13 @@ Sistema de Gestão de Clientes
 
 git clone https://github.com/bythiago/Gestao-de-Clientes.git
 
+<<<<<<< HEAD
 cd Gestao-de-Clientes
+=======
+``` bash
+cd projeto
+```
+>>>>>>> parent of 3de6adb... Update README.md
 
 sudo chmod -R 777 storage
 sudo chmod -R 777 bootstrap/cache

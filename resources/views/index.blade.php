@@ -57,9 +57,9 @@
                 @method('DELETE')
                 <input name="_method" type="hidden" value="DELETE">
 
-                <a class="btn btn-info" href="{{ action('ClienteController@show', $cliente['id']) }}">Show</a>
-                <a class="btn btn-warning" href="{{ action('ClienteController@edit', $cliente['id']) }}">Editar</a>
-                <button class="btn btn-danger" type="submit">Deletar</button>
+                <a class="btn btn-info btn-sm" href="{{ action('ClienteController@show', $cliente['id']) }}">S</a>
+                <a class="btn btn-warning btn-sm" href="{{ action('ClienteController@edit', $cliente['id']) }}">E</a>
+                <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Tem certeza de que deseja Excluir esse Registro?')">D</button>
               </form>
             </td>
           </tr>

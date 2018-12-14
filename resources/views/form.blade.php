@@ -15,22 +15,22 @@
 
 <div class="form-group">
   <label for="rua">Rua:</label>
-  <input type="text" id="rua" name="rua" class="form-control" value="{{ old('rua', '') }}" readonly >
+  <input type="text" id="rua" name="rua" class="form-control" value="{{ old('rua', @$clientes->rua) }}" readonly >
 </div>
 
 <div class="form-group">
   <label for="bairro">Bairro:</label>
-  <input type="text" id="bairro" name="bairro" class="form-control" value="{{ old('bairro', '') }}" readonly >
+  <input type="text" id="bairro" name="bairro" class="form-control" value="{{ old('bairro', @$clientes->bairro) }}" readonly >
 </div>
 
 <div class="form-group">
   <label for="cidade">Cidade:</label>
-  <input type="text" id="cidade" name="cidade" class="form-control" value="{{ old('cidade', '') }}" readonly >
+  <input type="text" id="cidade" name="cidade" class="form-control" value="{{ old('cidade', @$clientes->cidade) }}" readonly >
 </div>
 
 <div class="form-group">
   <label for="uf">UF:</label>
-  <input type="text" id="uf" name="uf" class="form-control" value="{{ old('uf', '') }}" readonly >
+  <input type="text" id="uf" name="uf" class="form-control" value="{{ old('uf', @$clientes->uf) }}" readonly >
 </div>
 
 <div class="form-group">
