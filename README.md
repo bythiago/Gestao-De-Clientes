@@ -1,7 +1,7 @@
 # projeto
 Sistema de Gestão de Clientes
 
-git clone https://github.com/bythiago/projeto.git
+git clone https://github.com/bythiago/Gestao-de-Clientes.git
 
 cd projeto
 
