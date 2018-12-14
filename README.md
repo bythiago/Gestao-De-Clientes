@@ -6,7 +6,7 @@ git clone https://github.com/bythiago/Gestao-de-Clientes.git
 ```
 
 ``` bash
-cd projeto
+cd Gestao-de-Clientes
 ```
 
 ``` bash
