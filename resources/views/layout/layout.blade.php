@@ -12,13 +12,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+    
+    <!-- dataTables -->
     <link rel="stylesheet" href="{{ asset('bower_components/datatables.net-dt/css/jquery.dataTables.min.css') }}">
 
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css" />
-    <link href="https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+    <!-- Main CSS -->
+    <link href="{{ asset('css/main.css?2018') }}" rel="stylesheet" type="text/css" /> 
 
+    <!-- font-awesome -->
+    <link href="{{ asset('bower_components/components-font-awesome/css/fontawesome-all.min.css') }}" rel="stylesheet" type="text/css" />
+    
     <!-- Google Font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   </head>
   <body>
     <!-- Navbar -->
