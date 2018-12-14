@@ -1,5 +1,5 @@
-# projeto
-Sistema de Gestão de Clientes
+# Sistema de Gestão de Clientes
+> Instruções para instalação do projeto
 
 ``` bash
 git clone https://github.com/bythiago/Gestao-de-Clientes.git
