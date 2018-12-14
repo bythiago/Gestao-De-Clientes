@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+  return redirect()->to('clientes');
 });
 
 Route::resource('clientes', 'ClienteController');
