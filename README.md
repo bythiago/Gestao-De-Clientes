@@ -4,17 +4,8 @@
 ``` bash
 git clone https://github.com/bythiago/Gestao-de-Clientes.git
 
-<<<<<<< HEAD
 cd Gestao-de-Clientes
-<<<<<<< HEAD
-=======
-``` bash
-cd projeto
 ```
->>>>>>> parent of 3de6adb... Update README.md
-=======
-```
->>>>>>> edddde6b31a8ef6d4a46f5262b475f7c40122e58
 
 ``` bash
 sudo chmod -R 777 storage
