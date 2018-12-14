@@ -35,7 +35,7 @@
               <a class="nav-link" href="{{ route('clientes.index') }}">Página principal <span class="sr-only">(current)</span></a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="{{ route('clientes.create') }}">Cadastrar Novos Cliente</a>
             </li>
 
@@ -60,6 +60,9 @@
     <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}" defer></script>
     <!-- Optional JavaScript -->
     <script src="{{ asset('bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <!-- jQuery Masked Input Plugin -->
+    <script src="{{ asset('/bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js') }}"></script>
+    <!-- ViaCEP  -->
     <script src="{{ asset('js/viacep.js') }}"></script>
 
     <script type="text/javascript">
@@ -69,6 +72,10 @@
                 "url": "{{ asset('js/Portuguese-Brasil.json') }}"
             }
         });
+
+        $("#cep").mask("99999-999");
+        $("#telefone").mask("(99)99999999");
+        $("#celular").mask("(99)9?99999999");
       });
     </script>
   </body>

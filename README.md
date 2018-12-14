@@ -3,7 +3,7 @@ Sistema de Gestão de Clientes
 
 git clone https://github.com/bythiago/Gestao-de-Clientes.git
 
-cd projeto
+cd Gestao-de-Clientes
 
 sudo chmod -R 777 storage
 sudo chmod -R 777 bootstrap/cache
