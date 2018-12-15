@@ -4,7 +4,7 @@
 1. Clonando o projeto
 
 ``` bash
-git clone https://github.com/bythiago/Gestao-de-Clientes.git && cd Gestao-de-Clientes
+git clone https://github.com/bythiago/Gestao-De-Clientes.git && cd Gestao-De-Clientes
 ```
 
 2. O Laravel requer permissão de leitura e escrita nos diretórios "storage" e "bootstrap/cache', portanto, altere as permissões desses diretórios executando os comandos abaixo.
