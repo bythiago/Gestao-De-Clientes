@@ -17,7 +17,7 @@ sudo chmod -R 777 bootstrap/cache
 3. Digite o commando "composer install" para instalar todos pacotes php necessários.
 
 ``` bash
-composer install --no-dev –optimize-autoloader
+composer install --no-dev --optimize-autoloader
 ```
 
 4. Execute o comando abaixo para copiar configurações da aplicação
