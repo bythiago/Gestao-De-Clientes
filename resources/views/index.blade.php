@@ -43,7 +43,7 @@
           <tr>
             <td>{{$cliente['id']}}</td>
             <td>{{$cliente['nome']}}</td>
-            <td>{{$cliente['data_nascimento']}}</td>
+            <td>{{ date( 'd/m/Y' , strtotime($cliente['data_nascimento']))}}</td>
             <td>{{$cliente['cep']}}</td>
             <td>{{$cliente['email']}}</td>
             <td>{{$cliente['telefone']}}</td>
@@ -57,8 +57,8 @@
                 @method('DELETE')
                 <input name="_method" type="hidden" value="DELETE">
 
-                <a class="btn btn-info btn-sm" href="{{ action('ClienteController@show', $cliente['id']) }}"><i class="fa fa-search" title="Mostrar"></i></a>
-                <a class="btn btn-warning btn-sm" href="{{ action('ClienteController@edit', $cliente['id']) }}" title="Editar"><i class="fa fa-pen"></i></a>
+                <a class="btn btn-success btn-sm" href="{{ action('ClienteController@show', $cliente['id']) }}"><i class="fa fa-search" title="Mostrar"></i></a>
+                <a class="btn btn-info btn-sm" href="{{ action('ClienteController@edit', $cliente['id']) }}" title="Editar"><i class="fa fa-pen"></i></a>
                 <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Tem certeza de que deseja Excluir esse Registro?')" title="Deletar"><i class="fa fa-trash"></i></button>
               </form>
             </td>

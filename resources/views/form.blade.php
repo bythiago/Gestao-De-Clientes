@@ -10,7 +10,7 @@
 
 <div class="form-group">
   <label for="cep">CEP:</label>
-  <input type="text" id="cep" name="cep" class="form-control" value="{{ old('cep', @$clientes->cep) }}" maxlength="8">
+  <input type="text" id="cep" name="cep" class="form-control" value="{{ old('cep', @$clientes->cep) }}" maxlength="9">
 </div>
 
 <div class="form-group">

@@ -28,7 +28,7 @@
   <div class="col-md-12">
     <form method="post" action="{{ route('clientes.store') }}">
        {{csrf_field()}}
-
+       
        @include('form', ['name' => 'Cadastrar'])
 
     </form>

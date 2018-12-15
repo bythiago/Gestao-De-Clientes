@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Gestão de Clientes') }}</title>
     <!-- JQuery  -->
-    <script src="{{ asset('bower_components/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ asset('public/bower_components/jquery/dist/jquery.min.js?2018') }}"></script>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/bower_components/bootstrap/dist/css/bootstrap.min.css?2018') }}">
     
     <!-- dataTables -->
-    <link rel="stylesheet" href="{{ asset('bower_components/datatables.net-dt/css/jquery.dataTables.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/bower_components/datatables.net-dt/css/jquery.dataTables.min.css?2018') }}">
 
     <!-- Main CSS -->
-    <link href="{{ asset('css/main.css?2018') }}" rel="stylesheet" type="text/css" /> 
+    <link href="{{ asset('public/css/main.css?2018') }}" rel="stylesheet" type="text/css" /> 
 
     <!-- font-awesome -->
-    <link href="{{ asset('bower_components/components-font-awesome/css/fontawesome-all.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('public/bower_components/components-font-awesome/css/fontawesome-all.min.css?2018') }}" rel="stylesheet" type="text/css" />
     
     <!-- Google Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -41,7 +41,7 @@
             </li>
 
             <li class="nav-item active">
-              <a class="nav-link" href="{{ route('clientes.create') }}">Cadastrar Novos Cliente</a>
+              <a class="nav-link" href="{{ route('clientes.create') }}">Cadastrar Novos Clientes</a>
             </li>
 
           </ul>
@@ -55,26 +55,20 @@
       </div>
     </main>
 
-    <!-- <footer class="footer">
-     <div class="container">
-       <span class="text-muted">Place sticky footer content here.</span>
-     </div>
-   </footer> -->
-
     <!-- Bootstrap JS -->
-    <script src="{{ asset('bower_components/bootstrap/dist/js/bootstrap.min.js') }}" defer></script>
+    <script src="{{ asset('public/bower_components/bootstrap/dist/js/bootstrap.min.js?2018') }}" defer></script>
     <!-- Optional JavaScript -->
-    <script src="{{ asset('bower_components/datatables.net/js/jquery.dataTables.min.js') }}"></script>
+    <script src="{{ asset('public/bower_components/datatables.net/js/jquery.dataTables.min.js?2018') }}"></script>
     <!-- jQuery Masked Input Plugin -->
-    <script src="{{ asset('/bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js') }}"></script>
+    <script src="{{ asset('public//bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js?2018') }}"></script>
     <!-- ViaCEP  -->
-    <script src="{{ asset('js/viacep.js') }}"></script>
+    <script src="{{ asset('public/js/viacep.js?2018') }}" defer></script>
 
     <script type="text/javascript">
       $(document).ready(function() {
         $('#tables').DataTable({
           "language": {
-                "url": "{{ asset('js/Portuguese-Brasil.json') }}"
+                "url": "{{ asset('public/js/Portuguese-Brasil.json') }}"
             }
         });
 

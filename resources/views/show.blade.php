@@ -25,7 +25,7 @@
 
   <div class="form-group">
     <strong>Data de Nascimento:</strong>
-    {{ $clientes->data_nascimento }}
+    {{ date( 'd/m/Y' , strtotime($clientes['data_nascimento']))}}
   </div>
 
   <div class="form-group">
