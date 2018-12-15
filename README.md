@@ -14,19 +14,19 @@ sudo chmod -R 777 storage
 sudo chmod -R 777 bootstrap/cache
 ```
 
-3. Digite o commando "composer install" para instalar todos pacotes php necessários.
+3. Execute o comando para instalar todos pacotes PHP necessários.
 
 ``` bash
 composer install --no-dev --optimize-autoloader
 ```
 
-4. Execute o comando abaixo para copiar configurações da aplicação
+4. Execute o comando para copiar configurações da aplicação
 
 ``` bash
 cp .env.example .env
 ```
 
-5. Seguindo a ordem, no arquivo que acabou de copiar *.env*, configure o seu banco de dados
+5. Seguindo a ordem, edite o arquivo que você acabou de copiar *.env*, então configure o seu banco de dados
 
 ``` text
 DB_CONNECTION=mysql
@@ -37,13 +37,17 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-6. Utilize o comando abaixo para gerar uma chave para sua aplicação.
+6. Utilize o comando para gerar uma chave para sua aplicação.
 
 ``` bash
 php artisan key:generate
 ```
 
-7. Para finalizar, utilizecomando "php artisan migrate". Isso vai criar as tabelas do banco de dados.
+7. Para finalizar, utilize próximo comando, ele irá criar as tabelas do banco de dados.
 ``` bash
 php artisan migrate --seed
 ```
+
+8. A aplicação está pronta para ser executada atraves do endereço
+
+[http://localhost/Gestao-de-Clientes/](http://localhost/Gestao-de-Clientes/)
