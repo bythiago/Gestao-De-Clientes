@@ -4,9 +4,7 @@
 1. Clonando o projeto
 
 ``` bash
-git clone https://github.com/bythiago/Gestao-de-Clientes.git
-
-cd Gestao-de-Clientes
+git clone https://github.com/bythiago/Gestao-de-Clientes.git && cd Gestao-de-Clientes
 ```
 
 2. O Laravel requer permissão de leitura e escrita nos diretórios "storage" e "bootstrap/cache', portanto, altere as permissões desses diretórios executando os comandos abaixo.
@@ -19,7 +17,7 @@ sudo chmod -R 777 bootstrap/cache
 3. Digite o commando "composer install" para instalar todos pacotes php necessários.
 
 ``` bash
-composer install && composer dump-autoload
+composer install --no-dev –optimize-autoloader
 ```
 
 4. Execute o comando abaixo para copiar configurações da aplicação
@@ -47,5 +45,5 @@ php artisan key:generate
 
 7. Para finalizar, utilizecomando "php artisan migrate". Isso vai criar as tabelas do banco de dados.
 ``` bash
-php artisan migrate
+php artisan migrate --seed
 ```
