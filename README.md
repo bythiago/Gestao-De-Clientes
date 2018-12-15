@@ -1,5 +1,5 @@
 # Sistema de Gestão de Clientes
-> Instruções para instalação do projeto
+> Instruções para instalação do projeto desenvolvido com [Laravel Framework 5.7](https://laravel.com/)
 
 1. Clonando o projeto
 
