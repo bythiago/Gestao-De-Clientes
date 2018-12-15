@@ -48,8 +48,4 @@ php artisan key:generate
 php artisan migrate --seed
 ```
 
-8. A aplicação está pronta para ser executada atraves do endereço
-
-``` text
-[http://localhost/Gestao-de-Clientes/](http://localhost/Gestao-de-Clientes/)
-```
+8. A aplicação está pronta para ser executada atraves do endereço [http://localhost/Gestao-de-Clientes/](http://localhost/Gestao-de-Clientes/)
