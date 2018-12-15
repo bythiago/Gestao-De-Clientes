@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Hash;
 use App\Http\Requests\ClienteRequest;
 use Illuminate\Http\Request;
 use App\Cliente;
@@ -36,7 +37,22 @@ class ClienteController extends Controller {
      */
     public function store(ClienteRequest $request){
 
-      $clientes = new Cliente($request->all());
+      //$clientes = new Cliente($request->all());
+      $clientes = new Cliente();
+
+      $clientes->nome = $request->get('nome');
+      $clientes->data_nascimento = $request->get('data_nascimento');
+      $clientes->cep = $request->get('cep');
+      $clientes->rua = $request->get('rua');
+      $clientes->bairro = $request->get('bairro');
+      $clientes->cidade = $request->get('cidade');
+      $clientes->uf = $request->get('uf');
+      $clientes->email = $request->get('email');
+      $clientes->telefone = $request->get('telefone');
+      $clientes->celular = $request->get('celular');
+      $clientes->matricula = $request->get('matricula');
+      $clientes->login = $request->get('login');
+      $clientes->password = Hash::make($request->get('password'));
 
       $clientes->save();
       return redirect()->route('clientes.index')
@@ -75,7 +91,23 @@ class ClienteController extends Controller {
     public function update(ClienteRequest $request, $id){
 
       $clientes = Cliente::find($id);
-      $clientes->update($request->all());
+
+      $clientes->nome = $request->get('nome');
+      $clientes->data_nascimento = $request->get('data_nascimento');
+      $clientes->cep = $request->get('cep');
+      $clientes->rua = $request->get('rua');
+      $clientes->bairro = $request->get('bairro');
+      $clientes->cidade = $request->get('cidade');
+      $clientes->uf = $request->get('uf');
+      $clientes->email = $request->get('email');
+      $clientes->telefone = $request->get('telefone');
+      $clientes->celular = $request->get('celular');
+      $clientes->matricula = $request->get('matricula');
+      $clientes->login = $request->get('login');
+      $clientes->password = Hash::make($request->get('password'));
+      
+      $clientes->update();
+      //$clientes->update($request->all());
 
       return redirect()->route('clientes.index')
       ->with('success','Cliente atualizado com sucesso.');

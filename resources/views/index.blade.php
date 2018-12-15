@@ -31,7 +31,8 @@
           <th>CEP</th>
           <th>E-mail</th>
           <th>Tel</th>
-          <th>Cel</th>
+          <th>Matr</th>
+          <th>Login</th>
           <!-- <th>Matr</th>
           <th>Login</th>
           <th>Password</th> -->
@@ -47,7 +48,8 @@
             <td>{{$cliente['cep']}}</td>
             <td>{{$cliente['email']}}</td>
             <td>{{$cliente['telefone']}}</td>
-            <td>{{$cliente['celular']}}</td>
+            <td>{{$cliente['matricula']}}</td>
+            <td>{{$cliente['login']}}</td>
             <!-- <td>{{$cliente['matricula']}}</td>
             <td>{{$cliente['login']}}</td>
             <td>{{$cliente['password']}}</td> -->
@@ -57,7 +59,7 @@
                 @method('DELETE')
                 <input name="_method" type="hidden" value="DELETE">
 
-                <a class="btn btn-success btn-sm" href="{{ action('ClienteController@show', $cliente['id']) }}"><i class="fa fa-search" title="Mostrar"></i></a>
+                <a class="btn btn-success btn-sm" href="{{ action('ClienteController@show', $cliente['id']) }}"><i class="fa fa-search-plus" title="Mostrar"></i></a>
                 <a class="btn btn-info btn-sm" href="{{ action('ClienteController@edit', $cliente['id']) }}" title="Editar"><i class="fa fa-pen"></i></a>
                 <button class="btn btn-danger btn-sm" type="submit" onclick="return confirm('Tem certeza de que deseja Excluir esse Registro?')" title="Deletar"><i class="fa fa-trash"></i></button>
               </form>
